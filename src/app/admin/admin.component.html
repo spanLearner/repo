@@ -1,0 +1,32 @@
+<div class="container-fluid align-vh-center" style="height: 100vh;">
+    <div class="form-container shadow-sm p-4">
+        <h5 class="text-center">AdminPanel to upload Questions</h5>
+        <form #adminForm (ngSubmit)="onSubmit()">
+            <div class="row mt-5">
+                <div class="col-12 mb-3">
+                    <textarea class="form-control" name="question" [(ngModel)]="question" placeholder="question"
+                        id="exampleFormControlTextarea1" rows="2"  required></textarea>               
+                </div>
+                <div class="col-12">
+                    <input name="option1" [(ngModel)]="option1" placeholder="option1" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <input name="option2" [(ngModel)]="option2" placeholder="option2" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <input name="option3" [(ngModel)]="option3" placeholder="option3" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <input name="option4" [(ngModel)]="option4" placeholder="option4" class="form-control" required>
+                </div>
+                <div class="col-12">
+                    <textarea class="form-control" [(ngModel)]="description" id="exampleFormControlTextarea1" rows="3"
+                        placeholder="Enter description" required></textarea>
+                </div>
+    
+            </div>
+            <button type="submit" class="btn btn-primary w-100 mt-3" >Submit</button>
+        </form>
+       
+    </div>
+</div>
