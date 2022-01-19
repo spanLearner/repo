@@ -1,1 +1,54 @@
-<app-admin></app-admin>
+<div class="row">
+    <div class="navbar">
+        <div>
+            <a class="active" href="polity/polity.html">Polity</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> History</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Geography</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Other</a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-auto">
+        <div class="sidenav">
+            <a href="https://www.drishtiias.com/daily-updates/daily-news-analysis/attorney-general-of-india">Attorney
+                General of India</a>
+
+            <div id="myDIV">
+            </div>
+            <a href="attorney general/quiz.html">quiz</a>
+            <script>
+                function myFunction() {
+                    var x = document.getElementById("myDIV");
+                    if (x.style.display === "none") {
+                        x.style.display = "block";
+                    } else {
+                        x.style.display = "none";
+                    }
+                }
+            </script>
+            <a href="polity/dpsp.html">DPSP</a>
+            <a href="polity/quiz2/quiz2.html">quiz2</a>
+            <a href="polity/fundamental duties/FD.html">FD</a>
+            <a href="polity/fundamental duties/FDquiz.html">Quiz.FD</a>
+            <a href="polity/president/president.html">President</a>
+            <a href="polity/president/president quiz.html">President Quiz</a>
+            <a href="polity/vice president/V.P.html">VP</a>
+            <a href="polity/vice president/VPquiz.html">Quiz.VP</a>
+            <a href="polity/Council of ministers/com.html">CoM</a>
+            <a href="polity/Council of ministers/com.quiz.html">Quiz.CoM</a>
+        </div>
+
+        <div class="main">
+            <h2></h2>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+    <div class="col">
+        <!-- <router-outlet></router-outlet> -->
+       <app-quiz></app-quiz>
+    </div>
+</div>

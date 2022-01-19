@@ -6,17 +6,21 @@ import { AppComponent } from './app.component';
 import { AdminComponent } from './admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import {NgxFsModule} from 'ngx-fs';
+import { AppRoutingModule } from './app.routing.module';
+import { QuizComponent } from './quiz/quiz.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AdminComponent
+    AdminComponent,
+    QuizComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     NgxFsModule,
-    HttpClientModule
+    HttpClientModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,7 @@
-const questions = [
+const questions = fetch('http://localhost:3000/questions')
+
+
+const questions2 = [
     {
         question: "Which of the following statemnts is correct about prime minister of india?",
         optionA: "Prime minister is the nominal head of the council of minister",
