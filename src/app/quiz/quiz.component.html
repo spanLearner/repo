@@ -1,0 +1,43 @@
+<main >
+  <div class="game-quiz-container">
+    <div class="game-details-container">
+      <h1>Score : <span id="player-score">{{score}}</span> / {{shuffledQuestions.length}}</h1>
+      <h1>Question : <span id="question-number">{{indexNumber}}</span> / {{shuffledQuestions.length}}</h1>
+    </div>
+
+    <div class="game-question-container">
+      <h1 id="display-question">{{currentQuestion.question}}</h1>
+    </div>
+
+    <div class="game-options-container">    
+
+      <span (click)="showDescription('optionA')">
+        <input #optionA type="radio" id="option-one" name="option" class="radio" value="optionA" />
+        <label for="option-one"  class="option" id="optionA">{{currentQuestion.optionA}}</label>
+      </span>
+
+      <span (click)="showDescription('optionB')">
+        <input #optionB type="radio" id="option-two" name="option" class="radio" value="optionB" />
+        <label for="option-two" class="option" id="optionB">{{currentQuestion.optionB}}</label>
+      </span>
+
+      <span (click)="showDescription('optionC')">
+        <input #optionC type="radio" id="option-three" name="option" class="radio" value="optionC" />
+        <label for="option-three" class="option" id="optionC">{{currentQuestion.optionC}}</label>
+      </span>
+
+      <span (click)="showDescription('optionD')">
+        <input #optionD type="radio" id="option-four" name="option" class="radio" value="optionD" />
+        <label for="option-four" class="option" id="optionD">{{currentQuestion.optionD}}</label>
+      </span>
+    </div>
+
+    <div class="next-button-container">
+      <button (click)="NextQuestion()">Next Question</button>
+    </div>
+
+    <div class="next-button-container">
+      <p id="qdesc" *ngIf="showDesc">{{currentQuestion.description}}</p>
+    </div>
+  </div>
+</main>

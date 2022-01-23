@@ -1,0 +1,43 @@
+<div class="row m-0">
+    <div class="navbar">
+        <div>
+            <a class="active" href="polity/polity.html">Polity</a>
+            <a href="#"><i class="fa fa-fw fa-search"></i> History</a>
+            <a href="#"><i class="fa fa-fw fa-envelope"></i> Geography</a>
+            <a href="#"><i class="fa fa-fw fa-user"></i> Other</a>
+        </div>
+    </div>
+</div>
+
+<div class="row m-0">
+    <div class="col-auto">
+        <div class="sidenav">
+            <a (click)="onNavigate('AGI')">Attorney General of India</a>
+            <a (click)="onNavigate('COM')">COM</a>
+            <a (click)="onNavigate('DPSP')">DPSP</a>
+            <a (click)="onNavigate('quiz2')">quiz2</a>
+            <a (click)="onNavigate('FD')">FD</a>
+            <a (click)="onNavigate('Quiz_FD')">Quiz_FD</a>
+            <a (click)="onNavigate('President')">President</a>
+            <a (click)="onNavigate('President_QUIZ')">President Quiz</a>
+            <a (click)="onNavigate('VP')">VP</a>
+            <a (click)="onNavigate('Quiz_VP')">Quiz_VP</a>
+            <a (click)="onNavigate('CoM')">CoM</a>
+            <a (click)="onNavigate('Quiz_CoM')">Quiz_CoM</a>
+            <a (click)="onNavigate('Parliament')">Parliament</a>
+            <a (click)="onNavigate('Fundamental_Right')">FR</a>
+            <a (click)="onNavigate('FR_Quiz')">FR Quiz</a>
+        </div>
+
+        <div class="main">
+            <h2></h2>
+            <p></p>
+            <p></p>
+        </div>
+
+    </div>
+    <div class="col">
+        <router-outlet></router-outlet>
+        <!-- <app-quiz></app-quiz> -->
+    </div>
+</div>
